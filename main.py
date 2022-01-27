@@ -52,7 +52,7 @@ class App(tk.Tk):
         os.system("python3 crawler.py")
 
     def OnDNSLookupButtonClick(Self):
-        os.system("python3 .\Dns-Lookup-in-Python\dnsGui.py")
+        os.system("python3 .\DNS\dnsGui.py")
         
     def CreateMenuButtons(self):
         networkScannerBtn = tk.Button(self,text='Network Scanner', command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
