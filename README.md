@@ -27,7 +27,7 @@ A DNS lookup is the querying technique of the Domain Name System (DNS) to determ
 ## Demo
 
 Insert gif or link to demo
-
+![GIF]https://cdn.discordapp.com/attachments/901811535737929763/936335778269765732/Desktop-20220128-00155901-Trim.gif
 
 ## Used By
 
