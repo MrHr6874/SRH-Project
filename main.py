@@ -51,11 +51,16 @@ class App(tk.Tk):
     def OnWebCrawlerButtonClick(self):
         os.system("python3 crawler.py")
 
+    def OnDNSLookupButtonClick(Self):
+        os.system("python3 .\Dns-Lookup-in-Python\dnsGui.py")
+        
     def CreateMenuButtons(self):
         networkScannerBtn = tk.Button(self,text='Network Scanner', command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
         networkScannerBtn.pack(side='left', padx=20, pady=20)
-        networkScannerBtn = tk.Button(self,text='Web Crawler', command=lambda: self.OnWebCrawlerButtonClick(),bg='#2980B9', fg='white')
-        networkScannerBtn.pack(side='right', padx=20, pady=20)
+        WebScraperBtn = tk.Button(self,text='Web Crawler', command=lambda: self.OnWebCrawlerButtonClick(),bg='#2980B9', fg='white')
+        WebScraperBtn.pack(side='right', padx=20, pady=20)
+        GetDNSBtn = tk.Button(self,text='Get DNS Information', command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
+        GetDNSBtn.pack(side='bottom', padx=40, pady=20)
 
 if __name__ == '__main__':
     app = App()
