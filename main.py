@@ -7,7 +7,7 @@ import tkinter.font as font
 
 descryption = '''CyberSecurity Tool developed by Group 2
 It's an open Source project.
-Tools included NetworkScanner and WebCrawler'''
+Tools included NetworkScanner, WebCrawler and DNS Lookup'''
 
 def WindowConfiguration(tk,windowtitle):
     windowWidth = 600
