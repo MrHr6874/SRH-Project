@@ -14,6 +14,8 @@ Vulnerability Detector is a program that is designed to assess computers, networ
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/42005470/151432533-aed9613b-aef2-47b0-9aaf-e8b3b7a79f06.png)
+![image](https://user-images.githubusercontent.com/42005470/151436891-93df1ea5-8c4e-47b0-aaac-53415ffbbb32.png)
+![image](https://user-images.githubusercontent.com/42005470/151436914-082cdd30-5c39-4655-bb7f-f667d9734439.png)
 
 
 
