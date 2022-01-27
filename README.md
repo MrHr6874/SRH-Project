@@ -13,6 +13,7 @@ Vulnerability Detector is a program that is designed to assess computers, networ
 
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/42005470/151432533-aed9613b-aef2-47b0-9aaf-e8b3b7a79f06.png)
 
 
 
