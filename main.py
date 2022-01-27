@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import *
 import os
+import tkinter.font as font
+
 #from turtle import bgcolor
 
 descryption = '''CyberSecurity Tool developed by Group 2
@@ -20,7 +22,7 @@ def WindowConfiguration(tk,windowtitle):
     defaultGeometry = f'{windowWidth}x{windowHeight}+{centreX}+{centreY}'
     
     tk.geometry(defaultGeometry)
-    tk.config(bg='#BDC3C7')
+    tk.configure(bg='#34495e')
     tk.resizable(False, False)
     tk.title(windowtitle)
     tk.attributes('-alpha', 1)
@@ -39,7 +41,7 @@ class App(tk.Tk):
 
     def DisplayToolDescryption(self):
         global descryption
-        descryptionLabel = Label(self,text = descryption, bg='#666699', fg='white')
+        descryptionLabel = Label(self,text = descryption, bg='#666699', fg='white',width=200, height=10, font= ('Courier New',12))
         descryptionLabel.pack()
 
     def OnNetworkScannerButtonClick(self):
@@ -55,12 +57,17 @@ class App(tk.Tk):
         os.system("python3 .\DNS\dnsGui.py")
         
     def CreateMenuButtons(self):
+        myFont = font.Font(size=15)
         networkScannerBtn = tk.Button(self,text='Network Scanner', command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
         networkScannerBtn.pack(side='left', padx=20, pady=20)
+        networkScannerBtn['font'] = myFont
         WebScraperBtn = tk.Button(self,text='Web Crawler', command=lambda: self.OnWebCrawlerButtonClick(),bg='#2980B9', fg='white')
         WebScraperBtn.pack(side='right', padx=20, pady=20)
-        GetDNSBtn = tk.Button(self,text='Get DNS Information', command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
+        WebScraperBtn['font'] = myFont
+        GetDNSBtn = tk.Button(self,text='DNS', command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
         GetDNSBtn.pack(side='bottom', padx=40, pady=20)
+        GetDNSBtn['font'] = myFont
+
 
 if __name__ == '__main__':
     app = App()
