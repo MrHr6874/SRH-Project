@@ -50,7 +50,7 @@ class App(tk.Tk):
         WindowConfiguration(NetworkScannerFrame, windowtitle='NetWorkScanner')'''
         os.system("python3 NetworkScanner.py")
 
-    def OnWebCrawlerButtonClick(self):
+    def OnWebScraperButtonClick(self):
         os.system("python3 crawler.py")
 
     def OnDNSLookupButtonClick(Self):
@@ -61,7 +61,7 @@ class App(tk.Tk):
         networkScannerBtn = tk.Button(self,text='Network Scanner', command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
         networkScannerBtn.pack(side='left', padx=20, pady=20)
         networkScannerBtn['font'] = myFont
-        WebScraperBtn = tk.Button(self,text='Web Scraper', command=lambda: self.OnWebCrawlerButtonClick(),bg='#2980B9', fg='white')
+        WebScraperBtn = tk.Button(self,text='Web Scraper', command=lambda: self.OnWebScraperButtonClick(),bg='#2980B9', fg='white')
         WebScraperBtn.pack(side='right', padx=20, pady=20)
         WebScraperBtn['font'] = myFont
         GetDNSBtn = tk.Button(self,text='DNS', command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
