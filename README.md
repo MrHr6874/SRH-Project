@@ -23,7 +23,7 @@ Network Analyzer is a python-based Cybersecurity Multi-function tool in which we
 
 ## Modules Information
 
-Web crawler is an application that browses the World Wide Web to index web pages. It is operated by search engines. The web crawler enables the user to search data and extract key words in many languages using multiple filters covering a wide range of sources. The scraped data can be accessed by users from its archive. 
+Web scraping a web page involves fetching it and extracting from it. Fetching is the downloading of a page (which a browser does when a user views a page). Therefore, web crawling is a main component of web scraping, to fetch pages for later processing. Once fetched, then extraction can take place. The content of a page may be parsed, searched, reformatted, its data copied into a spreadsheet or loaded into a database. Web scrapers typically take something out of a page, to make use of it for another purpose somewhere else. An example would be to find and copy names and telephone numbers, or companies and their URLs, or e-mail addresses to a list. 
 
 Network Scanner is a tool that can locate every device connected to a network, it maybe a large corporate network or small home networks. It is an IP scanner that can check if all the devices connected to the network are running smoothly. The Network Scanner shows all the shared resources, including system and hidden resources. It also checks access rights which the user can mount as a network drive open them in a browser.
 
