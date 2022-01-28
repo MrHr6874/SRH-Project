@@ -34,7 +34,8 @@ A DNS lookup is the querying technique of the Domain Name System (DNS) to determ
 
 ## UML 
 ![image](https://user-images.githubusercontent.com/42005470/151511918-0b6c5c01-09da-4d72-b785-d62b0165e6e0.png)
-![image](https://user-images.githubusercontent.com/42005470/151512043-5e329ae8-8dcc-4220-b1f8-06325d4e6a1b.png)
+![image](https://user-images.githubusercontent.com/42005470/151512043-5e329ae8-8dcc-4220-b1f8-06325d4e6a1b.png) ![image](https://user-images.githubusercontent.com/42005470/151512194-c9a586c2-c312-4348-9362-ca5d974caf7d.png)
+
 
 
 ## Used By
