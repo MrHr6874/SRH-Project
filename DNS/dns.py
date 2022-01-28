@@ -19,7 +19,7 @@ class DnsQueryBuilder:
                 
                 split_url = url.split(".")
                 try:
-                        #print("in try block")
+                        
                         if isinstance(int(split_url[0]), int):
                                 split_url.append('in-addr')
                                 split_url.append('arpa')
@@ -88,9 +88,9 @@ def guiBuilder(domain, qtype, dnsIP):
 
 def main():
 
-        #Creating an ArgumentParser object
+        
         parser = argparse.ArgumentParser(description='Custom nslookup by Nikhil Mehral')
-        #Adding Arguments into ArgumentParser object
+        
         parser.add_argument('url', help='Enter URl for DNS Query ')
         parser.add_argument('--dns_ip', default="1.1.1.1", help='IP Adress of DNS Server, eg: --dns_ip 8.8.8.8')
         parser.add_argument('--rtype', default="AA", choices=["AA", "MX", "CNAME", "PTR", "AAAA"], help='Request Query type, eg: --rtype AA, NS, CNAME, MX, AAAA')
@@ -99,10 +99,10 @@ def main():
         url = args.url
         dns = args.dns_ip.encode('utf-8')
         rtype = args.rtype.encode('utf-8')
-        #print(dns)      
+             
         
                 
-        # Sending the packet
+        
         builder = DnsQueryBuilder()
         packet = builder.build_query_packet(url, rtype)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -114,9 +114,9 @@ def main():
 
         line = result.splitlines()
         for i in range(len(line)):
-                #print(line[i])
+                
                 words = line[i].split(' ')
-                #print(words)
+                
                 for i in range(len(words)):
                         if words[i] == 'Question:':
                                 print('Host name: ' + words[i+1].strip(".'"))
