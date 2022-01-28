@@ -1,7 +1,7 @@
 
-# Project Title
+# Network Analyzer 
+Network Analyzer is a python-based Cybersecurity Multi-function tool in which we will develop several modules for analyzing computer networks, and applications. The tool will detect network-related data and provide a report automatically.
 
-Vulnerability Detector is a program that is designed to assess computers, networks, or applications for known weaknesses. These weaknesses make it viable for hackers to exploit vulnerabilities and access unauthorized sensitive files. Though many patching systems are in place to repair vulnerabilities, there are some critical fixes that are overlooked. Such oversight can be automatically identified by the Vulnerability Detector tool and produce a report with findings, which the administrators can utilize to rectify the weaknesses.
 
 
 ## Authors
