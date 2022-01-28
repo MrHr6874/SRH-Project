@@ -28,6 +28,14 @@ Network Scanner is a tool that can locate every device connected to a network, i
 
 A DNS lookup is the querying technique of the Domain Name System (DNS) to determine the domain name associated with an IP address – the reverse of the usual "forward" DNS lookup of an IP address from a domain name. The process of reverse resolving of an IP address uses PTR records. rDNS involves searching domain name registry and registrar tables. This may be used to try to identify the originator’s domain name to track, for example, a spammer sending spam emails or the domain name of a computer trying to break into a firewall or someone trying to hack the system. It may also be used to determine the name of the internet service provider assigned to a particular IP address.
 
+DNS module has following record types:
+
+AA : Address record (Returns a 32-bit IPv4 address, most commonly used to map hostnames to an IP address of the host)
+AAAA: IPv6 address record (Returns a 128-bit IPv6 address, most commonly used to map hostnames to an IP address of the host)
+MX : Mail exchange record  (Maps a domain name to a list of message transfer agents for that domain)
+CNAME: Canonical name record (Alias of one name to another: the DNS lookup will continue by retrying the lookup with the new name.)
+PTR : Pointer to a canonical name (Unlike a CNAME, DNS processing stops and just the name is returned. The most common use is for implementing reverse DNS lookups.)
+
 
 ## Demo
 ![gif](https://cdn.discordapp.com/attachments/901811535737929763/936335778269765732/Desktop-20220128-00155901-Trim.gif)
