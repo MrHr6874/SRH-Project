@@ -45,6 +45,12 @@ CNAME: Canonical name record (Alias of one name to another: the DNS lookup will 
 PTR : Pointer to a canonical name (Unlike a CNAME, DNS processing stops and just the name is returned. The most common use is for implementing reverse DNS lookups.)
 
 
+Providing correct results is one of the key benefits which Google Public DNS provides. It puts priority on returning the right answer to a query. In cases when there is a query for a non-existent or mistyped domain name, users get an NXDOMAIN response, which indicates no known response, to their query.
+Google DNS is 8.8.8.8
+We can use any other DNS server IP
+We can use cloud fare DNS also 1.1.1.1
+
+
 ## Demo
 ![gif](https://cdn.discordapp.com/attachments/901811535737929763/936335778269765732/Desktop-20220128-00155901-Trim.gif)
 
