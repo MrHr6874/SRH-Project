@@ -31,6 +31,8 @@ A DNS lookup is the querying technique of the Domain Name System (DNS) to determ
 DNS module has following record types:
 
 AA : Address record (Returns a 32-bit IPv4 address, most commonly used to map hostnames to an IP address of the host)
+
+
 AAAA: IPv6 address record (Returns a 128-bit IPv6 address, most commonly used to map hostnames to an IP address of the host)
 MX : Mail exchange record  (Maps a domain name to a list of message transfer agents for that domain)
 CNAME: Canonical name record (Alias of one name to another: the DNS lookup will continue by retrying the lookup with the new name.)
