@@ -68,6 +68,9 @@ We can use any other DNS server IP
 | Quad9             | `9.9.9.9`       | `149.112.112.112`|
 
 
+Data encoder is an add on functionality in our product. It is used for data encryption. It uses symmetric entryption technology.
+Symmetric encryption is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information. This encryption method differs from asymmetric encryption where a pair of keys, one public and one private, is used to encrypt and decrypt messages. By using symmetric encryption algorithms, data is converted to a form that cannot be understood by anyone who does not possess the secret key to decrypt it.
+
 ## Demo
 ![gif](https://cdn.discordapp.com/attachments/901811535737929763/936335778269765732/Desktop-20220128-00155901-Trim.gif)
 
