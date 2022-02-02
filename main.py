@@ -1,9 +1,13 @@
+#!/bin/bash
 import tkinter as tk
 from tkinter import *
 import os
 import tkinter.font as font
-
 #from turtle import bgcolor
+
+'''if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')'''
 
 descryption = '''CyberSecurity Tool developed by Group 2
 It's an open Source project.
@@ -53,21 +57,26 @@ class App(tk.Tk):
     def OnWebScraperButtonClick(self):
         os.system("python3 crawler.py")
 
-    def OnDNSLookupButtonClick(Self):
+    def OnDNSLookupButtonClick(self):
         os.system("python3 .\DNS\dnsGui.py")
+    
+    def OnCryptoButtonClick(self):
+        os.system("python3 encryptiondecryption.py ")
         
     def CreateMenuButtons(self):
         myFont = font.Font(size=15)
-        networkScannerBtn = tk.Button(self,text='Network Scanner', command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
-        networkScannerBtn.pack(side='left', padx=20, pady=20)
+        networkScannerBtn = tk.Button(self,text='Network Scanner',bd=8, command=lambda: self.OnNetworkScannerButtonClick(), bg='#2980B9', fg='white')
+        networkScannerBtn.pack(side='left', padx=10, pady=20)
         networkScannerBtn['font'] = myFont
-        WebScraperBtn = tk.Button(self,text='Web Scraper', command=lambda: self.OnWebScraperButtonClick(),bg='#2980B9', fg='white')
+        WebScraperBtn = tk.Button(self,text='Web Scraper',bd=8, command=lambda: self.OnWebScraperButtonClick(),bg='#2980B9', fg='white')
         WebScraperBtn.pack(side='right', padx=20, pady=20)
         WebScraperBtn['font'] = myFont
-        GetDNSBtn = tk.Button(self,text='DNS', command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
+        GetDNSBtn = tk.Button(self,text='DNS',bd=8, command=lambda: self.OnDNSLookupButtonClick(), bg='#2980B9', fg='white')
         GetDNSBtn.pack(side='bottom', padx=40, pady=20)
         GetDNSBtn['font'] = myFont
-
+        EncDecBtn = tk.Button(self,text="Data Encoder",bd=8,command=lambda: self.OnCryptoButtonClick(),bg='#2980B9',fg='white')
+        EncDecBtn.pack(side='bottom',padx=40,pady=40)
+        EncDecBtn['font']=myFont
 
 if __name__ == '__main__':
     app = App()

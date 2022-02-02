@@ -82,7 +82,7 @@ top_frame.pack(side='top')
 canvas = Canvas(crawler, width=500, height=500)
 
 
-image = ImageTk.PhotoImage(Image.open('img/bg6.jpg'))
+image = ImageTk.PhotoImage(Image.open('img/bg1.jpg'))
 
 
 canvas.create_image(0,0, anchor=NW, image=image)
@@ -93,7 +93,7 @@ frame = LabelFrame(crawler, padx=30, pady=40, bg='white', bd='5', relief='groove
 frame.place(relx = 0.5, rely = 0.5, anchor = CENTER)
 
  
-url_add = tk.Label(frame, text = 'Enter a URL or Web Address',font=('Courier New',10, 'bold'),bg='white', fg='green').pack()
+url_add = tk.Label(frame, text = 'Enter a URL or Web Address',font=('Courier New',10, 'bold'),bg='white', fg='#34495e').pack()
 
 url_entry = tk.Entry(frame, font=('Courier New',10,'normal'), justify = 'center', bg='#FBB13C', width='30')
 

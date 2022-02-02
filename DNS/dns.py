@@ -89,7 +89,7 @@ def guiBuilder(domain, qtype, dnsIP):
 def main():
 
         
-        parser = argparse.ArgumentParser(description='Custom nslookup by Nikhil Mehral')
+        parser = argparse.ArgumentParser(description='Custom nslookup')
         
         parser.add_argument('url', help='Enter URl for DNS Query ')
         parser.add_argument('--dns_ip', default="1.1.1.1", help='IP Adress of DNS Server, eg: --dns_ip 8.8.8.8')
